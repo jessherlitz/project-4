@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         if period == "AM" {
             background.image = UIImage(named: "sun_background")
         } else {
-            background.image = UIImage(named: "sun_background")
+            background.image = UIImage(named: "pm_background")
         }
     }
     
