@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="project_4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun_background" translatesAutoresizingMaskIntoConstraints="NO" id="xPn-8q-vT9">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kif-tB-Wvv">
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B6N-h8-936">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="681.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aa6-Sd-trq">
+                                                <rect key="frame" x="153.33333333333334" y="0.0" width="123.66666666666666" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5S7-8u-kjP">
+                                                <rect key="frame" x="55" y="20.333333333333314" width="320" height="661"/>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oh4-jP-awk">
+                                        <rect key="frame" x="0.0" y="625.66666666666663" width="430" height="99"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Start / Stop"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yJ-dx-Hpu"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time remaining: 00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gd6-l8-htK">
+                                        <rect key="frame" x="0.0" y="665" width="430" height="174"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kif-tB-Wvv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4KD-xq-ufk"/>
+                            <constraint firstItem="xPn-8q-vT9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4i5-6t-iKR"/>
+                            <constraint firstItem="Kif-tB-Wvv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="55w-U9-Oou"/>
+                            <constraint firstItem="Kif-tB-Wvv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6et-Wp-iAz"/>
+                            <constraint firstItem="xPn-8q-vT9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OR0-gb-RG3"/>
+                            <constraint firstItem="xPn-8q-vT9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RJm-4b-S7R"/>
+                            <constraint firstItem="xPn-8q-vT9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RoY-ur-sIP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kif-tB-Wvv" secondAttribute="bottom" id="Yup-Eh-Shn"/>
+                            <constraint firstAttribute="bottom" secondItem="xPn-8q-vT9" secondAttribute="bottom" id="nZe-5V-8WV"/>
+                            <constraint firstItem="xPn-8q-vT9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="whN-Nl-prb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="StartStopButton" destination="oh4-jP-awk" id="kkM-qS-kM8"/>
+                        <outlet property="background" destination="xPn-8q-vT9" id="p0b-oE-VVV"/>
+                        <outlet property="date" destination="Aa6-Sd-trq" id="6EY-qD-HPh"/>
+                        <outlet property="datePicker" destination="5S7-8u-kjP" id="N4V-vD-hSc"/>
+                        <outlet property="timeRemainingLabel" destination="gd6-l8-htK" id="tCm-JX-8MJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-89.312977099236633" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sun_background" width="682.66668701171875" height="682.66668701171875"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
